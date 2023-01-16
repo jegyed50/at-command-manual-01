@@ -16,6 +16,8 @@ input.onButtonPressed(Button.A, function () {
     // WiFi Disconnect
     serial.writeString("AT+RST" + vCrLf)
     basic.pause(100)
+    // WiFi Disconnect
+    serial.writeString("AT+RST" + vCrLf)
 })
 input.onButtonPressed(Button.B, function () {
     basic.showString("AT" + vCrLf)
